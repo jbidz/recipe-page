@@ -1,0 +1,180 @@
+@font-face {
+  font-family: Outfit;
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Young-serif";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+:root {
+  --color-nutmeg: #854632;
+  --color-darkrasberry: #7b284f;
+
+  --color-White: #ffffff;
+  --color-rosewhite: #fff5fa;
+  --color-eggshell: #f3e6d8;
+  --color-lightgrey: #e4ded8;
+  --color-wengebrown: #5f574e;
+  --color-darkcharcoal: #302d2c;
+
+  --font-regular: 400;
+  --font-semibold: 600;
+  --font-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Outfit;
+  background-color: var(--color-eggshell);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Young-serif";
+  font-weight: var(--font-regular);
+  margin-bottom: 28px;
+  color: var(--color-nutmeg);
+}
+
+h1 {
+  color: var(--color-darkcharcoal);
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+p {
+  margin-bottom: 28px;
+  color: var(--color-wengebrown);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+b {
+  font-weight: var(--font-semibold);
+}
+
+ul,
+ol {
+  margin-bottom: 28px;
+  margin-left: 24px;
+}
+
+ol li::marker,
+ul li::marker {
+  font-weight: bold;
+  color: var(--color-nutmeg);
+}
+
+li {
+  color: var(--color-wengebrown);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  padding-left: 16px;
+}
+
+li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+main {
+  padding: 124px 30px;
+  width: 100%;
+}
+
+.recipe-image-mobile {
+  display: none;
+}
+
+.container {
+  background-color: var(--color-White);
+  max-width: 736px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 24px;
+}
+
+.container .recipe-image {
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 28px;
+}
+
+.bg-rosewhite {
+  background-color: var(--color-rosewhite);
+  padding: 28px;
+  margin-bottom: 28px;
+  border-radius: 10px;
+}
+
+.bg-rosewhite ul,
+.bg-rosewhite ol {
+  margin-bottom: 0;
+}
+
+.bg-rosewhite h3 {
+  font-family: Outfit;
+  color: var(--color-darkrasberry);
+  font-weight: 700;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-lightgrey);
+  margin-bottom: 28px;
+}
+
+.nutrition-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.nutrition-table tr:not(:last-child) {
+  border-bottom: 1px solid var(--color-lightgrey);
+}
+
+.nutrition-table tr td {
+  padding: 18px 32px;
+  color: var(--color-wengebrown);
+}
+
+.nutrition-table tr td:nth-child(2) {
+  font-weight: var(--font-semibold);
+  color: var(--color-nutmeg);
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 0;
+  }
+
+  .container {
+    border-radius: 0;
+    padding: 24px;
+  }
+
+  .container .recipe-image {
+    display: none;
+  }
+
+  .recipe-image-mobile {
+    display: block;
+  }
+}
