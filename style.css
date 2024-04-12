@@ -22,6 +22,8 @@
   --font-regular: 400;
   --font-semibold: 600;
   --font-bold: 700;
+
+  --container-general-margin: 16px;
 }
 
 *,
@@ -45,7 +47,7 @@ h5,
 h6 {
   font-family: "Young-serif";
   font-weight: var(--font-regular);
-  margin-bottom: 28px;
+  margin-bottom: var(--container-general-margin);
   color: var(--color-nutmeg);
 }
 
@@ -59,7 +61,7 @@ h2 {
 }
 
 p {
-  margin-bottom: 28px;
+  margin-bottom: var(--container-general-margin);
   color: var(--color-wengebrown);
   font-weight: 400;
   line-height: 1.6;
@@ -71,7 +73,7 @@ b {
 
 ul,
 ol {
-  margin-bottom: 28px;
+  margin-bottom: var(--container-general-margin);
   margin-left: 24px;
 }
 
@@ -119,7 +121,7 @@ main {
 .bg-rosewhite {
   background-color: var(--color-rosewhite);
   padding: 28px;
-  margin-bottom: 28px;
+  margin-bottom: var(--container-general-margin);
   border-radius: 10px;
 }
 
@@ -138,7 +140,7 @@ main {
   height: 1px;
   width: 100%;
   background-color: var(--color-lightgrey);
-  margin-bottom: 28px;
+  margin-bottom: var(--container-general-margin);
 }
 
 .nutrition-table {
